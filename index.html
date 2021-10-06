@@ -34,7 +34,7 @@
             >
           </li>
           <li class="navbar__btn">
-            <a href="#features" class="button" id="quote">Get a quote</a>
+            <a href="#sign-up" class="button" id="quote">Get a Quote</a>
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@
       <div class="hero__container">
         <h1 class="hero__heading">See your <span>ideas</span> come to life</h1>
         <p class="hero__description">Unlimited Possibilities</p>
-        <button class="main__btn"><a href="#">Explore</a></button>
+        <button class="main__btn"><a href="#services">Explore</a></button>
       </div>
     </div>
 
@@ -59,7 +59,7 @@
           <h1>What do we do?</h1>
           <h2>We help turn your ideas into reality</h2>
           <p>Schedule a call to learn more about our services</p>
-          <button class="main__btn"><a href="#">Schedule Call</a></button>
+          <button class="main__btn"><a href="#">Schedule a Call</a></button>
         </div>
       </div>
     </div>
@@ -95,10 +95,38 @@
     <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Talk to our team</h1>
-          <h2>Schedule a call Today</h2>
+          <h1>Create your ideas TODAY</h1>
+          <h2>Get a quote</h2>
           <p>See what makes us different</p>
-          <button class="main__btn"><a href="#">Schedule a Call</a></button>
+          <!-- Form Section -->
+    <div class="form">
+      <form action="https://formspree.io/f/xpzknyyp" method="POST" id="my-form">
+
+          <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName">
+          </div>
+
+          <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" id="lastName">
+          </div>
+
+          <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email">
+          </div>
+
+          <div class="form-group">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+
+          <button type="submit">Submit</button>
+      </form>
+  </div>
+  <div id="status"></div>
+          <button class="main__btn"><a href="#">Submit your ideas</a></button>
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
@@ -114,8 +142,7 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>About Us</h2>
-            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
-            <a href="/">Who we are</a>
+            <a href="/">Who we are</a> <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
           </div>
           <div class="footer__link--items">
             <h2>Contact Us</h2>
@@ -126,7 +153,7 @@
         <div class="footer__link--wrapper">
           <div class="footer__link--items">
             <h2>Gallery</h2>
-            <a href="/">Gallery</a><a href="/">Submit Images</a> <a href="/">Agency</a>
+            <a href="/">Gallery</a><a href="/">Submit Images</a>
           </div>
           <div class="footer__link--items">
             <h2>Social Media</h2>
@@ -138,9 +165,9 @@
       <section class="social__media">
         <div class="social__media--wrap">
           <div class="footer__logo">
-            <a href="/" id="footer__logo">COLOR</a>
+            <a href="/" id="footer__logo">Idea Printing</a>
           </div>
-          <p class="website__rights">© COLOR 2020. All rights reserved</p>
+          <p class="website__rights">© Idea Printing, LLC 2021. All rights reserved</p>
           <div class="social__icons">
             <a href="/" class="social__icon--link" target="_blank"
               ><i class="fab fa-facebook"></i
