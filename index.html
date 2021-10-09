@@ -59,6 +59,59 @@
           <h1>What do we do?</h1>
           <h2>We help turn your ideas into reality</h2>
           <p>Schedule a call to learn more about our services</p>
+          <section class="form">
+            <div class="form__container">
+              <form action="https://formspree.io/f/mayakpvk" enctype=multipart/form-data method="POST" id="my-form">
+
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
+
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number *</label>
+                    <input type="tel" name="tel" id="tel" required>
+                </div>
+
+                <div class="form-row">
+                  <select name = "days" required>
+                    <option value = "day-select">Select Day *</option>
+                    <option value = "sunday">Sunday</option>
+                    <option value = "monday">Monday</option>
+                    <option value = "tuesday">Tuesday</option>
+                    <option value = "wednesday">Wednesday</option>
+                    <option value = "thursday">Thursday</option>
+                    <option value = "friday">Friday</option>
+                    <option value = "saturday">Saturday</option>
+                  </select>
+
+                  <select name = "hours" required>
+                    <option value = "hour-select">Select Hour *</option>
+                    <option value = "10">10: 00</option>
+                    <option value = "10">12: 00</option>
+                    <option value = "10">14: 00</option>
+                    <option value = "10">16: 00</option>
+                    <option value = "10">18: 00</option>
+                    <option value = "10">20: 00</option>
+                    <option value = "10">22: 00</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
+
+                <button class="submit__btn" type="submit">Submit your ideas</button>
+              </form>
+            </div>
+          <div id="status"></div>
+        </section>
           <button class="main__btn"><a href="#">Schedule a Call</a></button>
         </div>
       </div>
@@ -95,38 +148,47 @@
     <div class="main" id="sign-up">
       <div class="main__container">
         <div class="main__content">
-          <h1>Create your ideas TODAY</h1>
+          <h1>Create something TODAY</h1>
           <h2>Get a quote</h2>
-          <p>See what makes us different</p>
+          <p>Please describe your idea and submit any files if necessary, we will be in contact with you shortly!</p>
           <!-- Form Section -->
-    <div class="form">
-      <form action="https://formspree.io/f/xpzknyyp" method="POST" id="my-form">
+          <section class="form">
+            <div class="form__container">
+              <form action="https://formspree.io/f/mayakpvk" enctype=multipart/form-data method="POST" id="my-form">
 
-          <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName">
-          </div>
+                <div class="form-group">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" name="firstName" id="firstName" required>
+                </div>
 
-          <div class="form-group">
-              <label for="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName">
-          </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName">
+                </div>
 
-          <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email">
-          </div>
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
 
-          <div class="form-group">
-              <label for="message">Message</label>
-              <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                </div>
 
-          <button type="submit">Submit</button>
-      </form>
-  </div>
-  <div id="status"></div>
-          <button class="main__btn"><a href="#">Submit your ideas</a></button>
+                <div class="form-group">
+                  <input type="file" name="file" id="real-file" accept="image/png, image/jpeg" hidden="hidden">
+                  <button id="custom-button" type="button">CHOOSE A FILE</button>
+                  <span id="custom-text">No file chosen, yet.</span>
+                </div>
+
+                <button class="submit__btn" type="submit">Submit your ideas</button>
+              </form>
+            </div>
+          <div id="status"></div>
+        </section>
+          <!-- End Form Section -->
+
         </div>
         <div class="main__img--container">
           <div class="main__img--card" id="card-2">
